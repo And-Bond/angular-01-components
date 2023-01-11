@@ -1,19 +1,21 @@
 import { Component, Input } from "@angular/core";
 import statistics from './stats.json'
 
+
 @Component({
     selector: 'stats-comp',
     template: `
-    <section>
-    <h2 *ngIf="title">{{title}}</h2>
-        <ul>
-            <li *ngFor="let stat of stats">
-                <span>{{stat.label}}</span>
-                <span>{{stat.percentage}}% </span>
+    <section class="statistics">
+    <h2 *ngIf="title" class="title">{{title}}</h2>
+        <ul class="statList">
+            <li *ngFor="let stat of stats" style=" backgroundColor: 'red';" class="item">
+                <span class="label">{{stat.label}}</span>
+                <span class="statistics">{{stat.percentage}}% </span>
             </li>
         </ul>
     </section>
-    `
+    `,
+    styleUrls: ["./stats.component.css"]
 })
 
 export class StatsComponent {
