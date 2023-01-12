@@ -7,7 +7,6 @@
       "ng": "ng",
       "start": "ng serve --open",
       "build": "ng build --configuration production",
-      "lint:ts": "eslint src/**/*.{typescript}"
     },
     "dependencies": {
       "@angular/common": "~15.0.0",
