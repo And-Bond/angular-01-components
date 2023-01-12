@@ -6,7 +6,7 @@
     "scripts": {
       "ng": "ng",
       "start": "ng serve --open",
-      "build": "ng build --configuration production",
+      "build": "ng build --configuration production"
     },
     "dependencies": {
       "@angular/common": "~15.0.0",
